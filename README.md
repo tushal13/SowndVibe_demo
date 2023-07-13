@@ -78,7 +78,7 @@ The SowndVibe Flutter app utilizes several dependencies to enhance its functiona
 <img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/fafccf66-bc70-4f84-ba4f-2e0d2e2c53b0" alt="Image" width="200">
 
 
-##video
+## Video
 
 
 https://github.com/tushal13/SowndVibe_demo/assets/113960162/4289122f-9e38-4026-a161-d1e905041aff
