@@ -1,58 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:sowndvibe/views/screens/home_page.dart';
+import 'package:provider/provider.dart';
 import 'package:sowndvibe/views/screens/video_home.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+import '../../controllers/homepage_controller.dart';
+import 'songhome_page.dart';
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin {
-  late TabController tabController;
-
-  @override
-  void initState() {
-    super.initState();
-
-    tabController = TabController(
-      length: 2,
-      vsync: this,
-    );
-  }
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: NestedScrollView(
-        headerSliverBuilder: (context, value) => [
-          SliverAppBar(
-            title: const Text("Sowndvibe"),
-            pinned: true,
-
-            bottom: TabBar(
-              controller: tabController,
-              tabs: const [
-                Tab(
-                  text: "Songs",
-                ),
-                Tab(
-                  text: "Videos",
-                ),
-              ],
-            ),
-          ),
-        ],
-        body: TabBarView(
-          controller: tabController,
-          children: [
-            // SongPage(),
-            SongHomePage(),
-            VideoHomePage(),
-          ],
-        ),
+      appBar: AppBar(
+        title: const Text("Sowndvibe"),
+      ),
+      body: Consumer<HomePageController>(
+        builder: (context, model, child) {
+          if (model.currentIndex == 0) {
+            return SongHomePage();
+          } else if (model.currentIndex == 1) {
+            return VideoHomePage();
+          } else {
+            return Container(); // Replace with desired default widget
+          }
+        },
+      ),
+      bottomNavigationBar: Consumer<HomePageController>(
+        builder: (context, model, child) {
+          return BottomNavigationBar(
+            currentIndex: model.currentIndex,
+            onTap: (index) {
+              model.setCurrentIndex(index);
+            },
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.music_note),
+                label: "Songs",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.video_library),
+                label: "Videos",
+              ),
+            ],
+          );
+        },
       ),
     );
   }

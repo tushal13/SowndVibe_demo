@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:sowndvibe/controllers/songs_controller.dart';
 import 'package:sowndvibe/views/screens/home.dart';
 import 'package:sowndvibe/views/screens/songplayer_page.dart';
+import 'controllers/homepage_controller.dart';
 import 'controllers/video_controller.dart';
 
 void main() {
@@ -14,6 +15,9 @@ void main() {
         ),
         ChangeNotifierProvider(
           create: (context) => VideoPlayerC(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomePageController(),
         ),
       ],
       child: MyApp(),

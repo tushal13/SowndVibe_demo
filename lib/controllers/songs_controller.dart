@@ -54,6 +54,7 @@ class SongPlayerController extends ChangeNotifier {
   }
 
   play() async {
+    AudioPlayer.pause();
     await AudioPlayer.play();
     notifyListeners();
   }
@@ -63,8 +64,8 @@ class SongPlayerController extends ChangeNotifier {
     notifyListeners();
   }
 
-  onSeek({required int sec}) async {
-    await AudioPlayer.seek(Duration(seconds: sec));
+  onSeek({required int second}) async {
+    await AudioPlayer.seek(Duration(seconds: second));
   }
 
   Previous() async {

@@ -23,7 +23,12 @@ class VideoHomePage extends StatelessWidget {
               ],
             );
           } else {
-            return SizedBox();
+            return Center(
+              child: Text(
+                'Select a video from the gallery',
+                style: TextStyle(fontSize: 18),
+              ),
+            );
           }
         },
       ),
@@ -33,7 +38,7 @@ class VideoHomePage extends StatelessWidget {
               Provider.of<VideoPlayerC>(context, listen: false);
           videoPlayerProvider.pickVideoFromDevice();
         },
-        child: Icon(Icons.folder),
+        child: Icon(Icons.video_collection),
       ),
     );
   }

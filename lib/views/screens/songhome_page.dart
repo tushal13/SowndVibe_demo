@@ -28,6 +28,7 @@ class SongHomePage extends StatelessWidget {
                 shrinkWrap: true,
                 itemCount: allSongs.length,
                 scrollDirection: Axis.vertical,
+                physics: NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 14,
