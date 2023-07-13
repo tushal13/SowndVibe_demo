@@ -193,27 +193,17 @@ class SongPlayerPage extends StatelessWidget {
                                       padding: const EdgeInsets.only(top: 30),
                                       child: Row(
                                         children: [
-                                          Consumer<SongPlayerController>(
-                                            builder: (context,
-                                                audioPlayerProvider, _) {
-                                              final isShuffleOn =
-                                                  audioPlayerProvider
-                                                      .isShuffleOn;
-
-                                              return IconButton(
-                                                onPressed: () {
-                                                  audioPlayerProvider
-                                                      .toggleShuffle();
-                                                },
-                                                icon: Icon(
-                                                  CupertinoIcons.shuffle,
-                                                  color: isShuffleOn
-                                                      ? Colors.green
-                                                      : Colors.white,
-                                                  size: 24,
-                                                ),
-                                              );
+                                          IconButton(
+                                            onPressed: () {
+                                              songPlayer.toggleShuffle();
                                             },
+                                            icon: Icon(
+                                              CupertinoIcons.shuffle,
+                                              color: songPlayer.isShuffleOn
+                                                  ? Colors.green
+                                                  : Colors.white,
+                                              size: 24,
+                                            ),
                                           ),
                                           IconButton(
                                             onPressed: () {
@@ -273,26 +263,17 @@ class SongPlayerPage extends StatelessWidget {
                                               size: 44,
                                             ),
                                           ),
-                                          Consumer<SongPlayerController>(
-                                            builder: (context,
-                                                audioPlayerProvider, _) {
-                                              final isLoopOn =
-                                                  audioPlayerProvider.isLoopOn;
-
-                                              return IconButton(
-                                                onPressed: () {
-                                                  audioPlayerProvider
-                                                      .toggleLoop();
-                                                },
-                                                icon: Icon(
-                                                  CupertinoIcons.repeat,
-                                                  color: isLoopOn
-                                                      ? Colors.green
-                                                      : Colors.white,
-                                                  size: 24,
-                                                ),
-                                              );
+                                          IconButton(
+                                            onPressed: () {
+                                              songPlayer.toggleLoop();
                                             },
+                                            icon: Icon(
+                                              CupertinoIcons.repeat,
+                                              color: songPlayer.isLoopOn
+                                                  ? Colors.green
+                                                  : Colors.white,
+                                              size: 24,
+                                            ),
                                           ),
                                         ],
                                       ),
