@@ -1,4 +1,4 @@
-# SowndVibe Flutter App
+# SowndVibe Demo Flutter App
 
 SowndVibe is a versatile audio and video player app developed using Flutter. It offers a range of features to enhance your music and video playback experience. 
 
