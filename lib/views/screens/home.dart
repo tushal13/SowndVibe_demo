@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
           } else if (model.currentIndex == 1) {
             return VideoHomePage();
           } else {
-            return Container(); // Replace with desired default widget
+            return Container();
           }
         },
       ),

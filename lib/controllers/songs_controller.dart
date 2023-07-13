@@ -11,6 +11,7 @@ class SongPlayerController extends ChangeNotifier {
   Color? dominantColor;
   bool _isShuffleOn = false;
   bool _isLoopOn = false;
+  bool isPlay = false;
 
   bool get isShuffleOn => _isShuffleOn;
   bool get isLoopOn => _isLoopOn;
@@ -54,13 +55,15 @@ class SongPlayerController extends ChangeNotifier {
   }
 
   play() async {
-    AudioPlayer.pause();
+    await AudioPlayer.pause();
     await AudioPlayer.play();
+    isPlay = true;
     notifyListeners();
   }
 
   pause() async {
     await AudioPlayer.pause();
+    isPlay = false;
     notifyListeners();
   }
 
