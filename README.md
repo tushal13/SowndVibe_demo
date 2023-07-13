@@ -57,6 +57,34 @@ The SowndVibe Flutter app utilizes several dependencies to enhance its functiona
 - `image_picker`: Enables the selection of videos from the device's gallery.
 - `palette_generator`: Extracts dominant colors from album artwork images.
 
+## Screenshot 
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/4d76c00e-21ca-4650-8e5a-1dd63986efc9" alt="Image" width="200">
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/19d62d22-1eb7-45f0-b697-51ad294bb192" alt="Image" width="200">
+
+
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/27b78789-e864-4375-af08-39b4a0ba58fe" alt="Image" width="200">
+
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/d793ea03-f39f-4770-bd7e-2ecc5059fb3c" alt="Image" width="200">
+
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/c53ffc97-f456-4737-8876-eefbdc5e298c" alt="Image" width="200">
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/978f1362-3a69-4c96-a26c-dd2b40121355" alt="Image" width="200">
+
+<img src="https://github.com/tushal13/SowndVibe_demo/assets/113960162/fafccf66-bc70-4f84-ba4f-2e0d2e2c53b0" alt="Image" width="200">
+
+
+##video
+
+
+https://github.com/tushal13/SowndVibe_demo/assets/113960162/4289122f-9e38-4026-a161-d1e905041aff
+
+
+
 ## Adding Songs
 
 SowndVibe will continue to expand its library by adding new songs on a regular basis. Stay tuned for upcoming updates to discover and enjoy even more music in the app.
