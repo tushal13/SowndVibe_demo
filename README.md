@@ -1,16 +1,123 @@
-# sowndvibe
+# SowndVibe Flutter App
 
-A new Flutter project.
+SowndVibe is a versatile audio and video player app developed using Flutter. It offers a range of features to enhance your music and video playback experience. 
+
+## Features
+
+- Audio Playback:
+  - Play, pause, and control the volume of audio songs.
+  - Seek through the audio track with a visually appealing progress indicator.
+  - Display song information, including title, artist, and album artwork.
+  - Support for playlist management and organization.
+
+- Video Playback:
+  - Play, pause, and control the volume of video files.
+  - Seek through the video timeline with a progress indicator.
+  - Smooth video playback using the Chewie package.
+  - Local video selection from the device's gallery.
+
+- Song and Video Management:
+  - Create playlists and manage your collection of songs and videos.
+  - Organize songs and videos by categories or filters.
+  - Browse through the library with a clean and visually appealing user interface.
+
+- User Interface:
+  - Clean and visually appealing UI design.
+  - Playback controls for easy navigation and control.
+  - Progress indicators and sliders for seeking through songs and videos.
+  - Theming options for customization of the app's appearance.
+
+- Upcoming Features:
+  - Addition of new songs and videos to the library.
+  - Integration with popular audio streaming platforms.
+  - Enhanced audio player features such as lyrics display and equalizer.
+  - Integration with popular video players for a seamless playback experience.
+  - Unique features tailored to provide an exceptional audio and video playback experience.
+
+## Directory Structure
+
+The app follows a well-organized directory structure to manage its components effectively:
+
+- `lib/`
+  - `views/`
+    - `screens/`: Contains the screens or pages of the app, such as the home page, song player page, and video player page.
+  - `models/`: Defines the data models used in the app, including the `Song` and `Video` classes.
+  - `utils/`: Provides utility files, such as `music_list.dart`, which stores a list of songs and videos.
+  - `controllers/`: Manages the logic and state of the app, including the `SongPlayerController` and `VideoPlayerC` classes.
+
+## Dependencies
+
+The SowndVibe Flutter app utilizes several dependencies to enhance its functionality:
+
+- `flutter/material.dart`: Provides the core Flutter material design components.
+- `provider`: Enables state management and data sharing between different components.
+- `assets_audio_player`: Handles audio playback and management of audio playlists.
+- `video_player`: Manages video playback and control.
+- `chewie`: Offers a customizable video player widget for smooth video playback.
+- `image_picker`: Enables the selection of videos from the device's gallery.
+- `palette_generator`: Extracts dominant colors from album artwork images.
+
+## Adding Songs
+
+SowndVibe will continue to expand its library by adding new songs on a regular basis. Stay tuned for upcoming updates to discover and enjoy even more music in the app.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run the SowndVibe Flutter app locally on your machine, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Ensure you have Flutter SDK and Dart installed on your machine.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Clone this repository using the following command:
+   ```
+   git clone https://github.com/your-username/sowndvibe-flutter-app.git
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Navigate to the project directory:
+   ```
+   cd sowndvibe-flutter-app
+   ```
+
+4. Install the required dependencies:
+   ```
+   flutter pub get
+   ```
+
+5. Connect your device or emulator and launch the app:
+   ```
+   flutter run
+   ```
+
+## Contributions
+
+Contributions to the SowndVibe Flutter app are welcome! If you have any bug fixes, enhancements, or new features to contribute, please follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature:
+   ```
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Make your changes and commit them:
+   ```
+   git commit -m "Add your commit message"
+   ```
+
+4. Push the changes to your forked repository:
+   ```
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request against the main repository's `develop` branch.
+
+## License
+
+The SowndVibe Flutter app is released under the [TG License](LICENSE).
+
+## Contact
+
+For any inquiries or feedback, please reach out to the project maintainers:
+
+- TG: tushalgopani003@gmail.com
+
+Discover and enjoy your favorite songs and videos with SowndVibe, an exceptional Flutter app that provides a seamless audio and video playback experience. Stay tuned for upcoming updates as we continue to add more songs to the library, making your music journey even more exciting and diverse.
