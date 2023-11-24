@@ -97,7 +97,7 @@ To run the SowndVibe Flutter app locally on your machine, follow these steps:
 
 2. Clone this repository using the following command:
    ```
-   git clone https://github.com/your-username/sowndvibe-flutter-app.git
+   git clone https://github.com/tushal13/sowndvibe-flutter-app.git
    ```
 
 3. Navigate to the project directory:
@@ -123,7 +123,7 @@ Contributions to the SowndVibe Flutter app are welcome! If you have any bug fixe
 
 2. Create a new branch for your feature:
    ```
-   git checkout -b feature/your-feature-name
+   git checkout -b feature/tushal13
    ```
 
 3. Make your changes and commit them:
@@ -133,14 +133,14 @@ Contributions to the SowndVibe Flutter app are welcome! If you have any bug fixe
 
 4. Push the changes to your forked repository:
    ```
-   git push origin feature/your-feature-name
+   git push origin feature/tushal13
    ```
 
 5. Open a pull request against the main repository's `develop` branch.
 
 ## License
 
-The SowndVibe Flutter app is released under the [TG License](LICENSE).
+The SowndVibe Flutter app is released under the [GT License](LICENSE).
 
 ## Contact
 
